@@ -23,6 +23,18 @@
   <modules>
     <module>poc-components</module>
   </modules>
+  <distributionManagement>
+    <repository>
+      <id>maven-local-releases</id>
+      <name>releases</name>
+      <url>http://localhost:8081/repository/maven-local-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-local-snapshots</id>
+      <name>snapshots</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <properties>
     <java.version>11</java.version>
     <revision>0.1-RELEASE</revision>
@@ -30,7 +42,7 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
+      <artifactId>spring-boot-starter-aop</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -49,6 +61,18 @@
       </exclusions>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>maven-local-releases</id>
+      <name>releases</name>
+      <url>http://localhost:8081/repository/maven-local-releases/</url>
+    </repository>
+    <repository>
+      <id>maven-central</id>
+      <name>central</name>
+      <url>http://localhost:8081/repository/maven-central/</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>

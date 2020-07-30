@@ -30,7 +30,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
         <dependency>
@@ -38,6 +38,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -80,4 +81,29 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>maven-local-releases</id>
+            <name>releases</name>
+            <url>http://localhost:8081/repository/maven-local-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-local-snapshots</id>
+            <name>snapshots</name>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>maven-local-releases</id>
+            <name>releases</name>
+            <url>http://localhost:8081/repository/maven-local-releases/</url>
+        </repository>
+        <repository>
+            <id>maven-central</id>
+            <name>central</name>
+            <url>http://localhost:8081/repository/maven-central/</url>
+        </repository>
+    </repositories>
 </project>
