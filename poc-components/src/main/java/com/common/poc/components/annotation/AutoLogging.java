@@ -1,4 +1,4 @@
-package com.example.poc.components.annotation;
+package com.common.poc.components.annotation;
 
 import java.lang.annotation.*;
 
