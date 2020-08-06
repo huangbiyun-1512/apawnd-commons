@@ -10,4 +10,5 @@ public class BaseResponseDto<T> {
   private String code;
   private String message;
   private T data;
+  private Iterable<? extends BaseErrorDto> errors;
 }
