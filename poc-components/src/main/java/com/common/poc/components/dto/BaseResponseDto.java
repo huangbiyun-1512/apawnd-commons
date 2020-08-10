@@ -3,9 +3,11 @@ package com.common.poc.components.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
 @Builder
-public class BaseResponseDto<T> {
+public class BaseResponseDto<T> implements Serializable {
 
   private String code;
   private String message;
