@@ -64,8 +64,8 @@ public class BaseResponseDto<T> implements Serializable {
         .build();
   }
 
-  private static final String RESPONSE_SUCCESS_CODE = "0";
+  private static final String RESPONSE_SUCCESS_CODE = "1";
   private static final String RESPONSE_SUCCESS_MESSAGE = "OK";
-  private static final String RESPONSE_FAILURE_CODE = "1";
+  private static final String RESPONSE_FAILURE_CODE = "0";
   private static final String RESPONSE_FAILURE_MESSAGE = "Failed";
 }
