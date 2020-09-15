@@ -2,7 +2,6 @@ package com.common.poc.components.util;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
@@ -16,7 +15,7 @@ public class MessageUtil {
   private final MessageSource messageSource;
 
   public MessageUtil(
-      @Autowired MessageSource messageSource) {
+      MessageSource messageSource) {
     this.messageSource = messageSource;
   }
 
