@@ -1,4 +1,4 @@
-package com.common.poc.components.dto;
+package com.maersk.commons.component.dto;
 
 import lombok.Builder;
 import lombok.Data;

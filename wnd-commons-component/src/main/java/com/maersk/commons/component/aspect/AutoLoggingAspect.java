@@ -1,4 +1,4 @@
-package com.common.poc.components.aspect;
+package com.maersk.commons.component.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class AutoLoggingAspect {
 
-    @Pointcut("@annotation(com.common.poc.components.annotation.AutoLogging)")
+    @Pointcut("@annotation(com.maersk.commons.component.annotation.AutoLogging)")
     public void autoLoggingAdvice() {
         // do nothing
     }

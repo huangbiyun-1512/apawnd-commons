@@ -1,4 +1,4 @@
-package com.common.poc.components.annotation;
+package com.maersk.commons.component.annotation;
 
 import java.lang.annotation.*;
 

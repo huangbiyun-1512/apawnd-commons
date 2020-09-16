@@ -1,6 +1,6 @@
-package com.common.poc.components.exception;
+package com.maersk.commons.component.exception;
 
-import com.common.poc.components.dto.BaseErrorDto;
+import com.maersk.commons.component.dto.BaseErrorDto;
 import lombok.Data;
 
 import java.util.List;

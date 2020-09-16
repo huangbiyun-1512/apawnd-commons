@@ -1,6 +1,6 @@
-package com.common.poc.components.util;
+package com.maersk.commons.component.util;
 
-import com.common.poc.components.dto.BaseErrorDto;
+import com.maersk.commons.component.dto.BaseErrorDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
