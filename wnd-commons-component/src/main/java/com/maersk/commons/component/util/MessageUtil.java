@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Locale;
 
+/**
+ * Util for retrieve message resources.
+ */
 @Component
 @Slf4j
 public class MessageUtil {
@@ -19,18 +22,41 @@ public class MessageUtil {
     this.messageSource = messageSource;
   }
 
+  /**
+   * retrieve message resources
+   * @param key
+   * @return String
+   */
   public String get(String key) {
     return this.get(key, null, LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources
+   * @param key
+   * @param objects
+   * @return String
+   */
   public String get(String key, Object[] objects) {
     return this.get(key, objects, LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources
+   * @param key
+   * @param objects
+   * @param locale
+   * @return String
+   */
   public String get(String key, Object[] objects, Locale locale) {
     return messageSource.getMessage(key, objects, locale);
   }
 
+  /**
+   * retrieve message resources code value
+   * @param key
+   * @return String
+   */
   public String getCode(String key) {
     return this.get(
         StringUtils.join(key, MESSAGE_SUFFIX_CODE),
@@ -38,6 +64,11 @@ public class MessageUtil {
         LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources title value
+   * @param key
+   * @return String
+   */
   public String getTitle(String key) {
     return this.get(
         StringUtils.join(key, MESSAGE_SUFFIX_TITLE),
@@ -45,6 +76,12 @@ public class MessageUtil {
         LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources title value
+   * @param key
+   * @param objects
+   * @return String
+   */
   public String getTitle(String key, Object[] objects) {
     return this.get(
         StringUtils.join(key, MESSAGE_SUFFIX_TITLE),
@@ -52,6 +89,11 @@ public class MessageUtil {
         LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources detail value
+   * @param key
+   * @return String
+   */
   public String getDetail(String key) {
     return this.get(
         StringUtils.join(key, MESSAGE_SUFFIX_DETAIL),
@@ -59,6 +101,12 @@ public class MessageUtil {
         LocaleContextHolder.getLocale());
   }
 
+  /**
+   * retrieve message resources detail value
+   * @param key
+   * @param objects
+   * @return String
+   */
   public String getDetail(String key, Object[] objects) {
     return this.get(
         StringUtils.join(key, MESSAGE_SUFFIX_DETAIL),
