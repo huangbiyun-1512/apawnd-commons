@@ -58,6 +58,25 @@ public class ErrorUtil {
     }
 
     /**
+     * build 409 error list
+     * @param key
+     * @return List
+     */
+    public List<BaseErrorDto> build409ErrorList(String key) {
+        return this.buildErrorList(HttpStatus.CONFLICT.value(), key);
+    }
+
+    /**
+     * build 409 error list
+     * @param key
+     * @param detail
+     * @return List
+     */
+    public List<BaseErrorDto> build409ErrorList(String key, String detail) {
+        return this.buildErrorList(HttpStatus.CONFLICT.value(), key, detail);
+    }
+
+    /**
      * build 500 error list
      * @param key
      * @return List
