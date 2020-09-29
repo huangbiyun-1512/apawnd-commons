@@ -39,6 +39,82 @@ public class ErrorUtil {
     }
 
     /**
+     * build 401 error list
+     * @param key
+     * @return List
+     */
+    public List<BaseErrorDto> build401ErrorList(String key) {
+        return this.buildErrorList(HttpStatus.UNAUTHORIZED.value(), key);
+    }
+
+    /**
+     * build 401 error list
+     * @param key
+     * @param detail
+     * @return List
+     */
+    public List<BaseErrorDto> build401ErrorList(String key, String detail) {
+        return this.buildErrorList(HttpStatus.UNAUTHORIZED.value(), key, detail);
+    }
+
+    /**
+     * build 403 error list
+     * @param key
+     * @return List
+     */
+    public List<BaseErrorDto> build403ErrorList(String key) {
+        return this.buildErrorList(HttpStatus.FORBIDDEN.value(), key);
+    }
+
+    /**
+     * build 403 error list
+     * @param key
+     * @param detail
+     * @return List
+     */
+    public List<BaseErrorDto> build403ErrorList(String key, String detail) {
+        return this.buildErrorList(HttpStatus.FORBIDDEN.value(), key, detail);
+    }
+
+    /**
+     * build 404 error list
+     * @param key
+     * @return List
+     */
+    public List<BaseErrorDto> build404ErrorList(String key) {
+        return this.buildErrorList(HttpStatus.NOT_FOUND.value(), key);
+    }
+
+    /**
+     * build 404 error list
+     * @param key
+     * @param detail
+     * @return List
+     */
+    public List<BaseErrorDto> build404ErrorList(String key, String detail) {
+        return this.buildErrorList(HttpStatus.NOT_FOUND.value(), key, detail);
+    }
+
+    /**
+     * build 405 error list
+     * @param key
+     * @return List
+     */
+    public List<BaseErrorDto> build405ErrorList(String key) {
+        return this.buildErrorList(HttpStatus.METHOD_NOT_ALLOWED.value(), key);
+    }
+
+    /**
+     * build 405 error list
+     * @param key
+     * @param detail
+     * @return List
+     */
+    public List<BaseErrorDto> build405ErrorList(String key, String detail) {
+        return this.buildErrorList(HttpStatus.METHOD_NOT_ALLOWED.value(), key, detail);
+    }
+
+    /**
      * build 408 error list
      * @param key
      * @return List
