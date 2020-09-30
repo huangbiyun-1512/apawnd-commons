@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.maersk.wnd</groupId>
+    <groupId>com.maersk.asia.wnd</groupId>
     <artifactId>wnd-commons</artifactId>
     <version>1.${revision}</version>
     <packaging>pom</packaging>
