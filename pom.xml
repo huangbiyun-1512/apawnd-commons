@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.maersk.apawnd</groupId>
+    <groupId>com.maersk.apawnd.commons</groupId>
     <artifactId>apawnd-commons</artifactId>
     <version>1.${revision}</version>
     <packaging>pom</packaging>
