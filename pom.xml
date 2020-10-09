@@ -10,15 +10,15 @@
     </parent>
 
     <groupId>com.maersk.apawnd</groupId>
-    <artifactId>wnd-commons</artifactId>
+    <artifactId>apawnd-commons</artifactId>
     <version>1.${revision}</version>
     <packaging>pom</packaging>
 
-    <name>wnd-commons</name>
-    <description>wnd commons lib</description>
+    <name>apawnd-commons</name>
+    <description>apawnd commons lib</description>
 
     <modules>
-        <module>wnd-commons-component</module>
+        <module>apawnd-commons-component</module>
     </modules>
 
     <properties>

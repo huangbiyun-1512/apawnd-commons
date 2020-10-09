@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.maersk.apawnd</groupId>
-        <artifactId>wnd-commons</artifactId>
+        <artifactId>apawnd-commons</artifactId>
         <version>1.${revision}</version>
     </parent>
 
-    <artifactId>wnd-commons-component</artifactId>
+    <artifactId>apawnd-commons-component</artifactId>
 
-    <name>wnd-commons-component</name>
-    <description>wnd commons component</description>
+    <name>apawnd-commons-component</name>
+    <description>apawnd commons component</description>
 
     <dependencies>
         <!-- Spring Boot Starter START -->

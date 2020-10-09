@@ -1,4 +1,4 @@
-package com.maersk.commons.component.dto;
+package com.maersk.apawnd.commons.component.dto;
 
 import lombok.Builder;
 import lombok.Data;

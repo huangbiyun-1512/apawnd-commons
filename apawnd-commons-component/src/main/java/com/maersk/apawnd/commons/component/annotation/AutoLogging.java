@@ -1,4 +1,4 @@
-package com.maersk.commons.component.annotation;
+package com.maersk.apawnd.commons.component.annotation;
 
 import java.lang.annotation.*;
 
